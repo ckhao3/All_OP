@@ -12,8 +12,8 @@ sed -i 's/\/bin\/ash/\/bin\/bash/g' package/base-files/files/etc/passwd
 # 移除要替换的包
 #rm -rf feeds/packages/net/mosdns
 #rm -rf feeds/packages/net/msd_lite
-rm -rf feeds/packages/net/smartdns
-rm -rf feeds/luci/applications/luci-app-alist
+#rm -rf feeds/packages/net/smartdns
+#rm -rf feeds/luci/applications/luci-app-alist
 #rm -rf feeds/luci/themes/luci-theme-argon
 #rm -rf feeds/luci/themes/luci-theme-netgear
 #rm -rf feeds/luci/applications/luci-app-mosdns
@@ -66,8 +66,8 @@ git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/
 #sed -i "s|ARMv8|ARMv8_PLUS|g" package/luci-app-amlogic/root/etc/config/amlogic
 
 # SmartDNS
-git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
-git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
+#git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
+#git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
 
 # msd_lite
 #git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite
@@ -77,7 +77,7 @@ git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
 #git clone --depth=1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 
 # Alist
-git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
+#git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 
 # DDNS.to
 #git_sparse_clone main https://github.com/linkease/nas-packages-luci luci/luci-app-ddnsto
